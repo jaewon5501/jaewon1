@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Easy Rent</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="soo.css">
+<!-- JS -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<style>
+html {
+	background: url(reser.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+</style>
+<body>
+	<nav
+		class="navbar navbar-expand-sm navbar fixed-top navbar-dark bg-dark">
+		<a href="index.html" class="navbar-brand">Easy Rent</a>
+		<!-- Toggle Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span> <span class="icon-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="notice.html" class="nav-link">공지사항</a></li>
+				<li class="nav-item"><a href="type.html" class="nav-link">기기종류</a></li>
+				<li class="active"><a href="reserv.html" class="nav-link">예약하기</a></li>
+				<li class="nav-item"><a href="service.html" class="nav-link">고객센터</a></li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse justify-content-end"
+			id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="login.html" class="nav-link">로그인</a></li>
+				<li class="nav-item"><a href="signin.html" class="nav-link">회원가입</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- content -->
+	<div class="container">
+		<form>
+			<div class="form-group row">
+				<label for="name" class="col-sm-3 col-form-label">성명</label>
+				<div class="col-sm-9">
+					<input class="form-control" id="name" placeholder="실명을 정확하게 입력해주세요">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="phone" class="col-sm-3 col-form-label">전화번호</label>
+				<div class="col-sm-9">
+					<input class="form-control" id="phone" placeholder="-없이 입력">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="date" class="col-sm-3 col-form-label">예약 날짜</label>
+				<div class="col-sm-9">
+					<input type="date" name="date" style="margin-top: 5px;">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label for="time" class="col-sm-3 col-form-label">예약 시간</label>
+				<div class="form-inline col-sm-9">
+					<select class="custom-select" id="AMPM">
+						<option value="1">오전</option>
+						<option value="2">오후</option>
+					</select> <select class="custom-select" id="clock">
+						<option selected>시</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select> <select class="custom-select" id="minute">
+						<option selected>분</option>
+						<option value="00">00</option>
+						<option value="10">10</option>
+						<option value="20">20</option>
+						<option value="30">30</option>
+						<option value="40">40</option>
+						<option value="50">50</option>
+					</select>
+					<label>부터</label>
+				</div>
+				<label for="time" class="col-sm-3 col-form-label"></label>
+				<div class="form-inline col-sm-9">
+					<select class="custom-select" id="AMPM">
+						<option value="1">오전</option>
+						<option value="2">오후</option>
+					</select> <select class="custom-select" id="clock">
+						<option selected>시</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select> <select class="custom-select" id="minute">
+						<option selected>분</option>
+						<option value="00">00</option>
+						<option value="10">10</option>
+						<option value="20">20</option>
+						<option value="30">30</option>
+						<option value="40">40</option>
+						<option value="50">50</option>
+					</select>
+					<label>까지</label>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- footer -->
+</body>
+
+</body>
+</html>

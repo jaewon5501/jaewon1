@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Easy Rent</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="soo.css">
+<!-- JS -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+html {
+	background: url(typebg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	margin-top: 100px;
+	background-color: transparent;
+}
+</style>
+</head>
+<body>
+	<nav
+		class="navbar navbar-expand-sm navbar fixed-top navbar-dark bg-dark">
+		<a href="index.html" class="navbar-brand">Easy Rent</a>
+		<!-- Toggle Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span> <span class="icon-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="notice.html" class="nav-link">공지사항</a></li>
+				<li class="active"><a href="type.html" class="nav-link">기기종류</a></li>
+				<li class="nav-item"><a href="reserv.html" class="nav-link">예약하기</a></li>
+				<li class="nav-item"><a href="service.html" class="nav-link">고객센터</a></li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse justify-content-end"
+			id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="#" class="nav-link">로그인</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">회원가입</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- content -->
+	<h2
+		style="text-align: center; color: white; background-color: rgba(0, 0, 0, 0.7);">
+		이미지를 클릭하세요</h2>
+	<div class="container"
+		style="display: flex; justify-content: center; align-items: center;">
+		<div class="row">
+			<img src="img/cycle.png" class="fadein" data-toggle="modal"
+				style="margin: 50px; float: left; width: 250px; height: 250px;"
+				data-target="#cycleModal">
+			<!-- Modal -->
+			<div class="modal fade" id="cycleModal" tabindex="-1" role="dialog"
+				aria-labelledby="cycleModalTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="cycleModalTitle">자전거</h5>
+							<button type="button" class="close" data-dismiss="modal"
+								aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="img/cycle.png" style="width: 250px; height: 250px;">
+							<p>자전거 슝슝</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary"
+								data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="img/quick.png" class="fadein" data-toggle="modal"
+				style="margin: 50px; float: left; width: 230px; height: 230px;"
+				data-target="#quickModal">
+			<div class="modal fade" id="quickModal" tabindex="-1" role="dialog"
+				aria-labelledby="quickModalTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="quickModalTitle">전동킥보드</h5>
+							<button type="button" class="close" data-dismiss="modal"
+								aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="img/quick.png" style="width: 250px; height: 250px;">
+							<p>전동킥보드 숑</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary"
+								data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="img/wheel.png" class="fadein" data-toggle="modal"
+				style="margin: 50px; float: left; width: 230px; height: 230px;"
+				data-target="#wheelModal">
+			<div class="modal fade" id="wheelModal" tabindex="-1" role="dialog"
+				aria-labelledby="wheelModalTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="wheelModalTitle">세그웨이</h5>
+							<button type="button" class="close" data-dismiss="modal"
+								aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body text-center">
+							<img src="img/wheel.png" style="width: 250px; height: 250px;">
+							<p>전동휠 슝</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary"
+								data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+</body>
+</html>

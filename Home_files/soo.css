@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .7);
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s linear;
+	transform: translateY(-100%);
+}
+
+.overlay.is-open {
+	background-color: rgba(255,255,255,0);
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+/* 아래에서 윗쪽으로 표현하려면 transform: translateY(100%)로 수정해주면 아래에서 윗로 표현이 가능합니다 */
+html {
+	background: url(bgcycle.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body{
+	margin: 0; // 1
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  text-align: left
+}
